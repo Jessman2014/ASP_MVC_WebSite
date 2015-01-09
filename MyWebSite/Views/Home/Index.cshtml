@@ -13,6 +13,17 @@
         <h2>Getting started</h2>
         <p>
             ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            @{
+                var fruits = new List<string> { "apples", "oranges", "bananas" };
+                <p> Favorite fruits:</p>
+                <ul>
+                    @foreach (string f in fruits)
+                    {
+                        <li>@f.ToUpper()</li>
+                    }
+                </ul>
+
+            }
             enables a clean separation of concerns and gives you full control over markup
             for enjoyable, agile development.
         </p>
@@ -20,8 +31,9 @@
     </div>
     <div class="col-md-4">
         <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p>NuGet is a free Visual Studio extension <strong> this is strong</strong>that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        
     </div>
     <div class="col-md-4">
         <h2>Web Hosting</h2>
